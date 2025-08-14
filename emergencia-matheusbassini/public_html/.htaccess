@@ -1,0 +1,9 @@
+# ViralCut Pro - Configuração Básica
+RewriteEngine On
+
+# Força HTTPS (se SSL estiver ativo)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Página de erro personalizada
+ErrorDocument 404 /index.html

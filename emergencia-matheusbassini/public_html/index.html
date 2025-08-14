@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViralCut Pro - matheusbassini.com.br</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #fff;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .success {
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 1.5em;
+            margin: 20px 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .info {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .contact {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+        .status {
+            background: rgba(76, 175, 80, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #4CAF50;
+        }
+        a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .emoji {
+            font-size: 2em;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">🎬</div>
+        <h1>ViralCut Pro</h1>
+        
+        <div class="success">✅ SITE FUNCIONANDO!</div>
+        
+        <div class="status">
+            <h3>🌐 Status do Servidor</h3>
+            <p><strong>Domínio:</strong> matheusbassini.com.br</p>
+            <p><strong>Status:</strong> <span style="color: #4CAF50;">ONLINE</span></p>
+            <p><strong>Servidor:</strong> Hostinger</p>
+            <p><strong>Data/Hora:</strong> <span id="datetime"></span></p>
+        </div>
+
+        <div class="info">
+            <h3>📋 Informações do Projeto</h3>
+            <p><strong>Aplicação:</strong> ViralCut Pro - Editor de Vídeos Virais</p>
+            <p><strong>Tecnologia:</strong> React + Node.js + MySQL</p>
+            <p><strong>Desenvolvedor:</strong> Matheus Bassini</p>
+            <p><strong>Versão:</strong> 1.0.0</p>
+        </div>
+
+        <div class="contact">
+            <h3>📞 Contato do Desenvolvedor</h3>
+            <p><strong>📧 Email:</strong> suporte@matheusbassini.com.br</p>
+            <p><strong>📱 WhatsApp:</strong> +55 12 99225-7085</p>
+            <p><strong>💬 Discord:</strong> matheusbassini</p>
+            <p><strong>🌐 GitHub:</strong> <a href="https://github.com/Matheus-Bassini/viralcut" target="_blank">github.com/Matheus-Bassini/viralcut</a></p>
+        </div>
+
+        <div style="margin-top: 30px; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+            <h3>🚀 Próximos Passos</h3>
+            <p>✅ Domínio funcionando corretamente</p>
+            <p>⏳ Instalando aplicação completa...</p>
+            <p>🎬 ViralCut Pro será carregado em breve!</p>
+        </div>
+
+        <div style="margin-top: 20px; font-size: 0.9em; opacity: 0.8;">
+            <p>Se você está vendo esta página, o servidor está funcionando perfeitamente!</p>
+            <p>Todos os problemas de DNS, SSL e configuração foram resolvidos.</p>
+        </div>
+    </div>
+
+    <script>
+        // Mostrar data/hora atual
+        function updateDateTime() {
+            const now = new Date();
+            const options = {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                timeZone: 'America/Sao_Paulo'
+            };
+            document.getElementById('datetime').textContent = now.toLocaleString('pt-BR', options);
+        }
+        
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+        
+        // Logs para debug
+        console.log('✅ JavaScript funcionando!');
+        console.log('🌐 Domínio: matheusbassini.com.br');
+        console.log('👨‍💻 Desenvolvedor: Matheus Bassini');
+        console.log('📧 Contato: suporte@matheusbassini.com.br');
+        console.log('🎬 ViralCut Pro - Editor de Vídeos Virais');
+        
+        // Teste de conectividade
+        fetch('/test-api', { method: 'GET' })
+            .then(response => {
+                if (response.ok) {
+                    console.log('✅ API funcionando!');
+                } else {
+                    console.log('⚠️ API não encontrada (normal para teste básico)');
+                }
+            })
+            .catch(error => {
+                console.log('ℹ️ API será configurada posteriormente');
+            });
+    </script>
+</body>
+</html>
