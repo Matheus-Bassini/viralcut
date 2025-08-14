@@ -1,0 +1,29 @@
+{
+  "name": "viralcut-pro",
+  "version": "1.0.0",
+  "description": "AI-powered video editing platform for creating viral short-form content",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd backend && npm run dev",
+    "client:dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "video-editing",
+    "ai",
+    "viral-content",
+    "social-media",
+    "tiktok",
+    "instagram",
+    "youtube"
+  ],
+  "author": "ViralCut Pro Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

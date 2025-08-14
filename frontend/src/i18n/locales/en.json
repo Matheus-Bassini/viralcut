@@ -1,0 +1,413 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "upload": "Upload",
+    "download": "Download",
+    "share": "Share",
+    "copy": "Copy",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "view": "View",
+    "preview": "Preview",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": "Phone",
+    "address": "Address",
+    "city": "City",
+    "country": "Country",
+    "language": "Language",
+    "theme": "Theme",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "yes": "Yes",
+    "no": "No",
+    "optional": "Optional",
+    "required": "Required",
+    "all": "All",
+    "none": "None",
+    "other": "Other",
+    "unknown": "Unknown",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "thisWeek": "This week",
+    "thisMonth": "This month",
+    "thisYear": "This year"
+  },
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "videos": "Videos",
+    "library": "Library",
+    "upload": "Upload Video",
+    "editor": "Editor",
+    "pricing": "Pricing",
+    "support": "Support",
+    "about": "About",
+    "contact": "Contact",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
+  },
+  "auth": {
+    "login": {
+      "title": "Sign in to your account",
+      "subtitle": "Welcome back to ViralCut Pro",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "your@email.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "loginButton": "Sign in",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "twoFactorTitle": "Two-Factor Authentication",
+      "twoFactorSubtitle": "Enter the 6-digit code from your authenticator app",
+      "twoFactorPlaceholder": "000000",
+      "useBackupCode": "Use backup code",
+      "errors": {
+        "invalidCredentials": "Invalid email or password",
+        "accountLocked": "Account temporarily locked",
+        "emailNotVerified": "Email not verified",
+        "twoFactorRequired": "Two-factor authentication required",
+        "invalidTwoFactor": "Invalid authentication code"
+      }
+    },
+    "register": {
+      "title": "Create your account",
+      "subtitle": "Start creating viral videos today",
+      "firstNameLabel": "First Name",
+      "firstNamePlaceholder": "Your first name",
+      "lastNameLabel": "Last Name",
+      "lastNamePlaceholder": "Your last name",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "your@email.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Create a strong password",
+      "confirmPasswordLabel": "Confirm password",
+      "confirmPasswordPlaceholder": "Enter password again",
+      "languageLabel": "Preferred language",
+      "agreeTerms": "I agree to the",
+      "termsOfService": "Terms of Service",
+      "and": "and",
+      "privacyPolicy": "Privacy Policy",
+      "registerButton": "Create account",
+      "hasAccount": "Already have an account?",
+      "signIn": "Sign in here",
+      "verificationSent": "Verification email sent",
+      "checkEmail": "Check your email to activate your account",
+      "errors": {
+        "emailExists": "Email already in use",
+        "passwordMismatch": "Passwords don't match",
+        "weakPassword": "Password too weak",
+        "invalidEmail": "Invalid email",
+        "termsRequired": "You must accept the terms of service"
+      }
+    },
+    "forgotPassword": {
+      "title": "Forgot your password?",
+      "subtitle": "Enter your email to receive reset instructions",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "your@email.com",
+      "sendButton": "Send instructions",
+      "backToLogin": "Back to login",
+      "emailSent": "Email sent",
+      "checkInbox": "Check your inbox for reset instructions"
+    },
+    "resetPassword": {
+      "title": "Reset password",
+      "subtitle": "Enter your new password",
+      "passwordLabel": "New password",
+      "passwordPlaceholder": "Enter your new password",
+      "confirmPasswordLabel": "Confirm new password",
+      "confirmPasswordPlaceholder": "Enter password again",
+      "resetButton": "Reset password",
+      "success": "Password reset successfully",
+      "loginNow": "Login now",
+      "errors": {
+        "invalidToken": "Invalid or expired reset link",
+        "passwordMismatch": "Passwords don't match"
+      }
+    },
+    "verifyEmail": {
+      "title": "Verify email",
+      "verifying": "Verifying your email...",
+      "success": "Email verified successfully",
+      "error": "Invalid or expired verification link",
+      "resend": "Resend verification email",
+      "continueToApp": "Continue to app"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back, {{name}}!",
+    "stats": {
+      "videosProcessed": "Videos Processed",
+      "totalViews": "Total Views",
+      "storageUsed": "Storage Used",
+      "remainingQuota": "Remaining Quota"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "uploadVideo": "Upload Video",
+      "importFromUrl": "Import from URL",
+      "viewLibrary": "View Library",
+      "upgradeAccount": "Upgrade Account"
+    },
+    "recentVideos": {
+      "title": "Recent Videos",
+      "noVideos": "No videos found",
+      "viewAll": "View all"
+    },
+    "processingQueue": {
+      "title": "Processing Queue",
+      "noQueue": "No videos in queue",
+      "processing": "Processing...",
+      "completed": "Completed",
+      "failed": "Failed"
+    }
+  },
+  "video": {
+    "upload": {
+      "title": "Upload Video",
+      "dragDrop": "Drag and drop your videos here",
+      "or": "or",
+      "browse": "Browse files",
+      "importFromUrl": "Import from URL",
+      "supportedFormats": "Supported formats: MP4, AVI, MOV, MKV, WebM",
+      "maxSize": "Max size: {{size}}",
+      "urlPlaceholder": "Paste YouTube, Instagram, or Zoom link",
+      "videoTitle": "Video title",
+      "videoDescription": "Description (optional)",
+      "category": "Category",
+      "tags": "Tags (comma separated)",
+      "uploadButton": "Upload Video",
+      "processing": "Processing video...",
+      "success": "Video uploaded successfully",
+      "errors": {
+        "fileTooBig": "File too large",
+        "invalidFormat": "Unsupported format",
+        "uploadFailed": "Upload failed",
+        "quotaExceeded": "Quota exceeded"
+      }
+    },
+    "library": {
+      "title": "Video Library",
+      "search": "Search videos...",
+      "filters": {
+        "all": "All",
+        "processing": "Processing",
+        "completed": "Completed",
+        "failed": "Failed"
+      },
+      "sort": {
+        "newest": "Newest",
+        "oldest": "Oldest",
+        "name": "Name",
+        "size": "Size"
+      },
+      "noVideos": "No videos found",
+      "uploadFirst": "Upload your first video to get started"
+    },
+    "editor": {
+      "title": "Video Editor",
+      "timeline": "Timeline",
+      "preview": "Preview",
+      "tools": "Tools",
+      "cuts": "Cuts",
+      "effects": "Effects",
+      "text": "Text",
+      "music": "Music",
+      "export": "Export",
+      "platforms": {
+        "tiktok": "TikTok",
+        "instagram": "Instagram",
+        "youtube": "YouTube",
+        "custom": "Custom"
+      },
+      "quality": {
+        "480p": "480p",
+        "720p": "720p",
+        "1080p": "1080p",
+        "4k": "4K"
+      }
+    },
+    "details": {
+      "title": "Video Details",
+      "duration": "Duration",
+      "size": "Size",
+      "format": "Format",
+      "resolution": "Resolution",
+      "uploadDate": "Upload date",
+      "status": "Status",
+      "clips": "Generated clips",
+      "downloads": "Downloads",
+      "views": "Views"
+    }
+  },
+  "subscription": {
+    "plans": {
+      "free": {
+        "name": "Free",
+        "description": "To get started",
+        "features": [
+          "5 videos per month",
+          "Up to 720p quality",
+          "Basic cuts",
+          "Email support"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "For creators",
+        "features": [
+          "50 videos per month",
+          "Up to 1080p quality",
+          "Advanced AI",
+          "Priority support",
+          "No watermark"
+        ]
+      },
+      "business": {
+        "name": "Business",
+        "description": "For businesses",
+        "features": [
+          "200 videos per month",
+          "Up to 4K quality",
+          "API integration",
+          "24/7 support",
+          "Advanced analytics"
+        ]
+      },
+      "sacred": {
+        "name": "Sacred",
+        "description": "Unlimited",
+        "features": [
+          "Unlimited videos",
+          "All features",
+          "Dedicated support",
+          "Early access",
+          "Custom consulting"
+        ]
+      }
+    },
+    "billing": {
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "save": "Save {{percent}}%"
+    },
+    "current": "Current plan",
+    "upgrade": "Upgrade",
+    "downgrade": "Downgrade",
+    "cancel": "Cancel subscription",
+    "resume": "Resume subscription"
+  },
+  "profile": {
+    "title": "Profile",
+    "personalInfo": "Personal Information",
+    "accountSettings": "Account Settings",
+    "subscription": "Subscription",
+    "billing": "Billing",
+    "security": "Security",
+    "notifications": "Notifications",
+    "language": "Language",
+    "timezone": "Timezone",
+    "avatar": "Profile Picture",
+    "changeAvatar": "Change picture",
+    "bio": "Bio",
+    "website": "Website",
+    "social": "Social Media",
+    "twoFactor": {
+      "title": "Two-Factor Authentication",
+      "description": "Add an extra layer of security to your account",
+      "enable": "Enable 2FA",
+      "disable": "Disable 2FA",
+      "setup": "Setup 2FA",
+      "qrCode": "QR Code",
+      "manualEntry": "Manual entry",
+      "backupCodes": "Backup codes",
+      "downloadCodes": "Download codes"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "general": "General",
+    "account": "Account",
+    "privacy": "Privacy",
+    "notifications": "Notifications",
+    "advanced": "Advanced",
+    "appearance": {
+      "title": "Appearance",
+      "theme": "Theme",
+      "language": "Language",
+      "timezone": "Timezone"
+    },
+    "notifications": {
+      "email": "Email notifications",
+      "processing": "Video processing",
+      "marketing": "Marketing emails",
+      "security": "Security alerts"
+    },
+    "privacy": {
+      "profileVisibility": "Profile visibility",
+      "videoVisibility": "Video visibility",
+      "analytics": "Analytics data collection"
+    }
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "network": "Connection error. Check your internet.",
+    "unauthorized": "You don't have permission for this action.",
+    "forbidden": "Access denied.",
+    "notFound": "Page not found.",
+    "serverError": "Internal server error.",
+    "validation": "Invalid data provided.",
+    "quotaExceeded": "Quota exceeded. Please upgrade your plan.",
+    "fileTooBig": "File too large.",
+    "invalidFormat": "Unsupported file format.",
+    "processingFailed": "Video processing failed.",
+    "paymentFailed": "Payment failed.",
+    "subscriptionExpired": "Subscription expired."
+  },
+  "success": {
+    "videoUploaded": "Video uploaded successfully",
+    "videoProcessed": "Video processed successfully",
+    "profileUpdated": "Profile updated successfully",
+    "passwordChanged": "Password changed successfully",
+    "subscriptionUpdated": "Subscription updated successfully",
+    "paymentSuccessful": "Payment successful",
+    "emailVerified": "Email verified successfully",
+    "twoFactorEnabled": "Two-factor authentication enabled",
+    "twoFactorDisabled": "Two-factor authentication disabled"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Enter a valid email",
+    "minLength": "Minimum {{min}} characters",
+    "maxLength": "Maximum {{max}} characters",
+    "passwordStrength": "Password must contain at least 8 characters, including uppercase, lowercase, number and symbol",
+    "passwordMatch": "Passwords must match",
+    "fileSize": "File too large (max {{max}})",
+    "fileType": "Unsupported file type"
+  }
+}

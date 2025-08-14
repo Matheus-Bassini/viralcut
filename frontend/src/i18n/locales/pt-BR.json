@@ -1,0 +1,413 @@
+{
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "save": "Salvar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "close": "Fechar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "submit": "Enviar",
+    "upload": "Enviar",
+    "download": "Baixar",
+    "share": "Compartilhar",
+    "copy": "Copiar",
+    "search": "Pesquisar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "view": "Visualizar",
+    "preview": "Pré-visualizar",
+    "settings": "Configurações",
+    "profile": "Perfil",
+    "logout": "Sair",
+    "login": "Entrar",
+    "register": "Cadastrar",
+    "email": "E-mail",
+    "password": "Senha",
+    "name": "Nome",
+    "firstName": "Nome",
+    "lastName": "Sobrenome",
+    "phone": "Telefone",
+    "address": "Endereço",
+    "city": "Cidade",
+    "country": "País",
+    "language": "Idioma",
+    "theme": "Tema",
+    "darkMode": "Modo Escuro",
+    "lightMode": "Modo Claro",
+    "yes": "Sim",
+    "no": "Não",
+    "optional": "Opcional",
+    "required": "Obrigatório",
+    "all": "Todos",
+    "none": "Nenhum",
+    "other": "Outro",
+    "unknown": "Desconhecido",
+    "today": "Hoje",
+    "yesterday": "Ontem",
+    "thisWeek": "Esta semana",
+    "thisMonth": "Este mês",
+    "thisYear": "Este ano"
+  },
+  "navigation": {
+    "home": "Início",
+    "dashboard": "Painel",
+    "videos": "Vídeos",
+    "library": "Biblioteca",
+    "upload": "Enviar Vídeo",
+    "editor": "Editor",
+    "pricing": "Planos",
+    "support": "Suporte",
+    "about": "Sobre",
+    "contact": "Contato",
+    "terms": "Termos de Uso",
+    "privacy": "Política de Privacidade"
+  },
+  "auth": {
+    "login": {
+      "title": "Entrar na sua conta",
+      "subtitle": "Bem-vindo de volta ao ViralCut Pro",
+      "emailLabel": "Endereço de e-mail",
+      "emailPlaceholder": "seu@email.com",
+      "passwordLabel": "Senha",
+      "passwordPlaceholder": "Digite sua senha",
+      "rememberMe": "Lembrar de mim",
+      "forgotPassword": "Esqueceu a senha?",
+      "loginButton": "Entrar",
+      "noAccount": "Não tem uma conta?",
+      "signUp": "Cadastre-se",
+      "twoFactorTitle": "Autenticação de Dois Fatores",
+      "twoFactorSubtitle": "Digite o código de 6 dígitos do seu aplicativo autenticador",
+      "twoFactorPlaceholder": "000000",
+      "useBackupCode": "Usar código de backup",
+      "errors": {
+        "invalidCredentials": "E-mail ou senha incorretos",
+        "accountLocked": "Conta temporariamente bloqueada",
+        "emailNotVerified": "E-mail não verificado",
+        "twoFactorRequired": "Autenticação de dois fatores necessária",
+        "invalidTwoFactor": "Código de autenticação inválido"
+      }
+    },
+    "register": {
+      "title": "Criar sua conta",
+      "subtitle": "Comece a criar vídeos virais hoje",
+      "firstNameLabel": "Nome",
+      "firstNamePlaceholder": "Seu nome",
+      "lastNameLabel": "Sobrenome",
+      "lastNamePlaceholder": "Seu sobrenome",
+      "emailLabel": "Endereço de e-mail",
+      "emailPlaceholder": "seu@email.com",
+      "passwordLabel": "Senha",
+      "passwordPlaceholder": "Crie uma senha forte",
+      "confirmPasswordLabel": "Confirmar senha",
+      "confirmPasswordPlaceholder": "Digite a senha novamente",
+      "languageLabel": "Idioma preferido",
+      "agreeTerms": "Concordo com os",
+      "termsOfService": "Termos de Serviço",
+      "and": "e",
+      "privacyPolicy": "Política de Privacidade",
+      "registerButton": "Criar conta",
+      "hasAccount": "Já tem uma conta?",
+      "signIn": "Entre aqui",
+      "verificationSent": "E-mail de verificação enviado",
+      "checkEmail": "Verifique seu e-mail para ativar sua conta",
+      "errors": {
+        "emailExists": "E-mail já está em uso",
+        "passwordMismatch": "Senhas não coincidem",
+        "weakPassword": "Senha muito fraca",
+        "invalidEmail": "E-mail inválido",
+        "termsRequired": "Você deve aceitar os termos de serviço"
+      }
+    },
+    "forgotPassword": {
+      "title": "Esqueceu sua senha?",
+      "subtitle": "Digite seu e-mail para receber instruções de redefinição",
+      "emailLabel": "Endereço de e-mail",
+      "emailPlaceholder": "seu@email.com",
+      "sendButton": "Enviar instruções",
+      "backToLogin": "Voltar ao login",
+      "emailSent": "E-mail enviado",
+      "checkInbox": "Verifique sua caixa de entrada para instruções de redefinição"
+    },
+    "resetPassword": {
+      "title": "Redefinir senha",
+      "subtitle": "Digite sua nova senha",
+      "passwordLabel": "Nova senha",
+      "passwordPlaceholder": "Digite sua nova senha",
+      "confirmPasswordLabel": "Confirmar nova senha",
+      "confirmPasswordPlaceholder": "Digite a senha novamente",
+      "resetButton": "Redefinir senha",
+      "success": "Senha redefinida com sucesso",
+      "loginNow": "Faça login agora",
+      "errors": {
+        "invalidToken": "Link de redefinição inválido ou expirado",
+        "passwordMismatch": "Senhas não coincidem"
+      }
+    },
+    "verifyEmail": {
+      "title": "Verificar e-mail",
+      "verifying": "Verificando seu e-mail...",
+      "success": "E-mail verificado com sucesso",
+      "error": "Link de verificação inválido ou expirado",
+      "resend": "Reenviar e-mail de verificação",
+      "continueToApp": "Continuar para o aplicativo"
+    }
+  },
+  "dashboard": {
+    "title": "Painel de Controle",
+    "welcome": "Bem-vindo de volta, {{name}}!",
+    "stats": {
+      "videosProcessed": "Vídeos Processados",
+      "totalViews": "Visualizações Totais",
+      "storageUsed": "Armazenamento Usado",
+      "remainingQuota": "Cota Restante"
+    },
+    "quickActions": {
+      "title": "Ações Rápidas",
+      "uploadVideo": "Enviar Vídeo",
+      "importFromUrl": "Importar de URL",
+      "viewLibrary": "Ver Biblioteca",
+      "upgradeAccount": "Fazer Upgrade"
+    },
+    "recentVideos": {
+      "title": "Vídeos Recentes",
+      "noVideos": "Nenhum vídeo encontrado",
+      "viewAll": "Ver todos"
+    },
+    "processingQueue": {
+      "title": "Fila de Processamento",
+      "noQueue": "Nenhum vídeo na fila",
+      "processing": "Processando...",
+      "completed": "Concluído",
+      "failed": "Falhou"
+    }
+  },
+  "video": {
+    "upload": {
+      "title": "Enviar Vídeo",
+      "dragDrop": "Arraste e solte seus vídeos aqui",
+      "or": "ou",
+      "browse": "Procurar arquivos",
+      "importFromUrl": "Importar de URL",
+      "supportedFormats": "Formatos suportados: MP4, AVI, MOV, MKV, WebM",
+      "maxSize": "Tamanho máximo: {{size}}",
+      "urlPlaceholder": "Cole o link do YouTube, Instagram ou Zoom",
+      "videoTitle": "Título do vídeo",
+      "videoDescription": "Descrição (opcional)",
+      "category": "Categoria",
+      "tags": "Tags (separadas por vírgula)",
+      "uploadButton": "Enviar Vídeo",
+      "processing": "Processando vídeo...",
+      "success": "Vídeo enviado com sucesso",
+      "errors": {
+        "fileTooBig": "Arquivo muito grande",
+        "invalidFormat": "Formato não suportado",
+        "uploadFailed": "Falha no envio",
+        "quotaExceeded": "Cota excedida"
+      }
+    },
+    "library": {
+      "title": "Biblioteca de Vídeos",
+      "search": "Pesquisar vídeos...",
+      "filters": {
+        "all": "Todos",
+        "processing": "Processando",
+        "completed": "Concluídos",
+        "failed": "Falharam"
+      },
+      "sort": {
+        "newest": "Mais recentes",
+        "oldest": "Mais antigos",
+        "name": "Nome",
+        "size": "Tamanho"
+      },
+      "noVideos": "Nenhum vídeo encontrado",
+      "uploadFirst": "Envie seu primeiro vídeo para começar"
+    },
+    "editor": {
+      "title": "Editor de Vídeo",
+      "timeline": "Linha do tempo",
+      "preview": "Pré-visualização",
+      "tools": "Ferramentas",
+      "cuts": "Cortes",
+      "effects": "Efeitos",
+      "text": "Texto",
+      "music": "Música",
+      "export": "Exportar",
+      "platforms": {
+        "tiktok": "TikTok",
+        "instagram": "Instagram",
+        "youtube": "YouTube",
+        "custom": "Personalizado"
+      },
+      "quality": {
+        "480p": "480p",
+        "720p": "720p",
+        "1080p": "1080p",
+        "4k": "4K"
+      }
+    },
+    "details": {
+      "title": "Detalhes do Vídeo",
+      "duration": "Duração",
+      "size": "Tamanho",
+      "format": "Formato",
+      "resolution": "Resolução",
+      "uploadDate": "Data de envio",
+      "status": "Status",
+      "clips": "Clipes gerados",
+      "downloads": "Downloads",
+      "views": "Visualizações"
+    }
+  },
+  "subscription": {
+    "plans": {
+      "free": {
+        "name": "Gratuito",
+        "description": "Para começar",
+        "features": [
+          "5 vídeos por mês",
+          "Qualidade até 720p",
+          "Cortes básicos",
+          "Suporte por e-mail"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "Para criadores",
+        "features": [
+          "50 vídeos por mês",
+          "Qualidade até 1080p",
+          "IA avançada",
+          "Suporte prioritário",
+          "Sem marca d'água"
+        ]
+      },
+      "business": {
+        "name": "Business",
+        "description": "Para empresas",
+        "features": [
+          "200 vídeos por mês",
+          "Qualidade até 4K",
+          "API de integração",
+          "Suporte 24/7",
+          "Análises avançadas"
+        ]
+      },
+      "sacred": {
+        "name": "Sacred",
+        "description": "Ilimitado",
+        "features": [
+          "Vídeos ilimitados",
+          "Todas as funcionalidades",
+          "Suporte dedicado",
+          "Acesso antecipado",
+          "Consultoria personalizada"
+        ]
+      }
+    },
+    "billing": {
+      "monthly": "Mensal",
+      "yearly": "Anual",
+      "save": "Economize {{percent}}%"
+    },
+    "current": "Plano atual",
+    "upgrade": "Fazer upgrade",
+    "downgrade": "Fazer downgrade",
+    "cancel": "Cancelar assinatura",
+    "resume": "Retomar assinatura"
+  },
+  "profile": {
+    "title": "Perfil",
+    "personalInfo": "Informações Pessoais",
+    "accountSettings": "Configurações da Conta",
+    "subscription": "Assinatura",
+    "billing": "Cobrança",
+    "security": "Segurança",
+    "notifications": "Notificações",
+    "language": "Idioma",
+    "timezone": "Fuso Horário",
+    "avatar": "Foto do Perfil",
+    "changeAvatar": "Alterar foto",
+    "bio": "Biografia",
+    "website": "Website",
+    "social": "Redes Sociais",
+    "twoFactor": {
+      "title": "Autenticação de Dois Fatores",
+      "description": "Adicione uma camada extra de segurança à sua conta",
+      "enable": "Ativar 2FA",
+      "disable": "Desativar 2FA",
+      "setup": "Configurar 2FA",
+      "qrCode": "Código QR",
+      "manualEntry": "Entrada manual",
+      "backupCodes": "Códigos de backup",
+      "downloadCodes": "Baixar códigos"
+    }
+  },
+  "settings": {
+    "title": "Configurações",
+    "general": "Geral",
+    "account": "Conta",
+    "privacy": "Privacidade",
+    "notifications": "Notificações",
+    "advanced": "Avançado",
+    "appearance": {
+      "title": "Aparência",
+      "theme": "Tema",
+      "language": "Idioma",
+      "timezone": "Fuso Horário"
+    },
+    "notifications": {
+      "email": "Notificações por e-mail",
+      "processing": "Processamento de vídeo",
+      "marketing": "E-mails promocionais",
+      "security": "Alertas de segurança"
+    },
+    "privacy": {
+      "profileVisibility": "Visibilidade do perfil",
+      "videoVisibility": "Visibilidade dos vídeos",
+      "analytics": "Coleta de dados analíticos"
+    }
+  },
+  "errors": {
+    "generic": "Algo deu errado. Tente novamente.",
+    "network": "Erro de conexão. Verifique sua internet.",
+    "unauthorized": "Você não tem permissão para esta ação.",
+    "forbidden": "Acesso negado.",
+    "notFound": "Página não encontrada.",
+    "serverError": "Erro interno do servidor.",
+    "validation": "Dados inválidos fornecidos.",
+    "quotaExceeded": "Cota excedida. Faça upgrade do seu plano.",
+    "fileTooBig": "Arquivo muito grande.",
+    "invalidFormat": "Formato de arquivo não suportado.",
+    "processingFailed": "Falha no processamento do vídeo.",
+    "paymentFailed": "Falha no pagamento.",
+    "subscriptionExpired": "Assinatura expirada."
+  },
+  "success": {
+    "videoUploaded": "Vídeo enviado com sucesso",
+    "videoProcessed": "Vídeo processado com sucesso",
+    "profileUpdated": "Perfil atualizado com sucesso",
+    "passwordChanged": "Senha alterada com sucesso",
+    "subscriptionUpdated": "Assinatura atualizada com sucesso",
+    "paymentSuccessful": "Pagamento realizado com sucesso",
+    "emailVerified": "E-mail verificado com sucesso",
+    "twoFactorEnabled": "Autenticação de dois fatores ativada",
+    "twoFactorDisabled": "Autenticação de dois fatores desativada"
+  },
+  "validation": {
+    "required": "Este campo é obrigatório",
+    "email": "Digite um e-mail válido",
+    "minLength": "Mínimo de {{min}} caracteres",
+    "maxLength": "Máximo de {{max}} caracteres",
+    "passwordStrength": "A senha deve conter pelo menos 8 caracteres, incluindo maiúscula, minúscula, número e símbolo",
+    "passwordMatch": "As senhas devem coincidir",
+    "fileSize": "Arquivo muito grande (máximo {{max}})",
+    "fileType": "Tipo de arquivo não suportado"
+  }
+}

@@ -1,0 +1,97 @@
+# ViralCut Pro - Configuração para Render
+# Deploy automático via GitHub
+
+services:
+  # Backend API Service
+  - type: web
+    name: viralcut-api
+    runtime: node
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: cd backend && npm ci
+    startCommand: cd backend && npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: DB_HOST
+        value: srv1883.hstgr.io
+      - key: DB_PORT
+        value: 3306
+      - key: DB_NAME
+        value: u206326127_viralcut
+      - key: DB_USER
+        value: u206326127_host
+      - key: DB_PASS
+        value: "@Host1603"
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_REFRESH_SECRET
+        generateValue: true
+      - key: JWT_EXPIRE
+        value: 15m
+      - key: JWT_REFRESH_EXPIRE
+        value: 7d
+      - key: BCRYPT_ROUNDS
+        value: 12
+      - key: EMAIL_HOST
+        value: smtp.gmail.com
+      - key: EMAIL_PORT
+        value: 587
+      - key: EMAIL_USER
+        value: noreply@viralcutpro.com
+      - key: EMAIL_FROM
+        value: noreply@viralcutpro.com
+      - key: RATE_LIMIT_WINDOW
+        value: 15
+      - key: RATE_LIMIT_MAX_REQUESTS
+        value: 100
+      - key: MAX_FILE_SIZE
+        value: 50mb
+      - key: TWO_FACTOR_SERVICE_NAME
+        value: ViralCut Pro
+      - key: FRONTEND_URL
+        fromService:
+          type: web
+          name: viralcut-frontend
+          property: host
+
+  # Frontend Static Site
+  - type: web
+    name: viralcut-frontend
+    runtime: static
+    env: static
+    region: oregon
+    plan: free
+    buildCommand: cd frontend && npm ci && npm run build
+    staticPublishPath: frontend/dist
+    pullRequestPreviewsEnabled: true
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-XSS-Protection
+        value: 1; mode=block
+    routes:
+      - type: rewrite
+        source: /api/*
+        destination: https://viralcut-api.onrender.com/api/:splat
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: viralcut-api
+          property: host
+
+# Database (usando o MySQL da Hostinger)
+# Não precisa criar database service pois já temos o MySQL configurado

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>ViralCut Pro - AI-Powered Video Editor for Viral Content</title>
+    <meta name="title" content="ViralCut Pro - AI-Powered Video Editor for Viral Content" />
+    <meta name="description" content="Create viral short-form videos with AI-powered editing. Optimize for TikTok, Instagram Reels, YouTube Shorts automatically. Start creating viral content today!" />
+    <meta name="keywords" content="video editor, AI video editing, viral videos, TikTok, Instagram Reels, YouTube Shorts, social media content, video cutting, automated editing" />
+    <meta name="author" content="ViralCut Pro Team" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://viralcutpro.com/" />
+    <meta property="og:title" content="ViralCut Pro - AI-Powered Video Editor for Viral Content" />
+    <meta property="og:description" content="Create viral short-form videos with AI-powered editing. Optimize for TikTok, Instagram Reels, YouTube Shorts automatically." />
+    <meta property="og:image" content="https://viralcutpro.com/og-image.jpg" />
+    <meta property="og:site_name" content="ViralCut Pro" />
+    <meta property="og:locale" content="pt_BR" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://viralcutpro.com/" />
+    <meta property="twitter:title" content="ViralCut Pro - AI-Powered Video Editor for Viral Content" />
+    <meta property="twitter:description" content="Create viral short-form videos with AI-powered editing. Optimize for TikTok, Instagram Reels, YouTube Shorts automatically." />
+    <meta property="twitter:image" content="https://viralcutpro.com/twitter-image.jpg" />
+    <meta property="twitter:creator" content="@viralcutpro" />
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#667eea" />
+    <meta name="msapplication-TileColor" content="#667eea" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="ViralCut Pro" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://viralcutpro.com/" />
+    
+    <!-- Favicon and Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#667eea" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "ViralCut Pro",
+      "description": "AI-powered video editor for creating viral short-form content optimized for social media platforms",
+      "url": "https://viralcutpro.com",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "ViralCut Pro Team"
+      },
+      "featureList": [
+        "AI-powered video cutting",
+        "Social media optimization",
+        "Multi-platform support",
+        "Automated editing",
+        "Cloud processing"
+      ]
+    }
+    </script>
+    
+    <!-- Performance and Security -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.stripe.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' blob: https:; connect-src 'self' https://api.viralcutpro.com wss://api.viralcutpro.com https://www.google-analytics.com;" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin />
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- Loading styles to prevent FOUC -->
+    <style>
+      /* Loading screen styles */
+      #loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        color: white;
+        font-family: 'Inter', sans-serif;
+      }
+      
+      .loading-logo {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        animation: pulse 2s infinite;
+      }
+      
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-top: 3px solid white;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      .loading-text {
+        margin-top: 1rem;
+        font-size: 1rem;
+        opacity: 0.8;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.7; }
+      }
+      
+      /* Hide loading screen when app loads */
+      .app-loaded #loading-screen {
+        display: none;
+      }
+      
+      /* Base styles */
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #f5f5f5;
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loading-logo">ViralCut Pro</div>
+      <div class="loading-spinner"></div>
+      <div class="loading-text">Carregando...</div>
+    </div>
+    
+    <!-- React App Root -->
+    <div id="root"></div>
+    
+    <!-- Remove loading screen when app loads -->
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          document.body.classList.add('app-loaded');
+        }, 500);
+      });
+    </script>
+    
+    <!-- Module Script -->
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Fallback for browsers that don't support modules -->
+    <noscript>
+      <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+        <h1>JavaScript Required</h1>
+        <p>This application requires JavaScript to run. Please enable JavaScript in your browser settings.</p>
+        <p>Esta aplicação requer JavaScript para funcionar. Por favor, habilite JavaScript nas configurações do seu navegador.</p>
+      </div>
+    </noscript>
+  </body>
+</html>
