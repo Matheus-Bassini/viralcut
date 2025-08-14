@@ -7,8 +7,6 @@ services:
     name: viralcut-api
     runtime: node
     env: node
-    region: oregon
-    plan: free
     buildCommand: cd backend && npm ci
     startCommand: cd backend && npm start
     healthCheckPath: /api/health
@@ -17,6 +15,7 @@ services:
         value: production
       - key: PORT
         value: 10000
+      # MySQL Hostinger Configuration
       - key: DB_HOST
         value: srv1883.hstgr.io
       - key: DB_PORT
@@ -27,32 +26,53 @@ services:
         value: u206326127_host
       - key: DB_PASS
         value: "@Host1603"
+      - key: MONGODB_URI
+        value: mysql://u206326127_host:@Host1603@srv1883.hstgr.io:3306/u206326127_viralcut
+      # JWT Configuration
       - key: JWT_SECRET
-        generateValue: true
+        value: viralcut-pro-jwt-secret-2024-matheusbassini-render
       - key: JWT_REFRESH_SECRET
-        generateValue: true
+        value: viralcut-pro-refresh-secret-2024-matheusbassini-render
       - key: JWT_EXPIRE
         value: 15m
       - key: JWT_REFRESH_EXPIRE
         value: 7d
-      - key: BCRYPT_ROUNDS
-        value: 12
+      # Email Configuration - Hostinger SMTP
       - key: EMAIL_HOST
-        value: smtp.gmail.com
+        value: smtp.hostinger.com
       - key: EMAIL_PORT
         value: 587
       - key: EMAIL_USER
-        value: noreply@viralcutpro.com
+        value: suporte@matheusbassini.com.br
+      - key: EMAIL_PASS
+        value: "@Suporte1603"
       - key: EMAIL_FROM
-        value: noreply@viralcutpro.com
+        value: suporte@matheusbassini.com.br
+      - key: EMAIL_SECURE
+        value: false
+      - key: EMAIL_TLS
+        value: true
+      # Security Configuration
+      - key: BCRYPT_ROUNDS
+        value: 12
+      - key: SESSION_SECRET
+        value: viralcut-session-secret-2024-matheusbassini
+      # Rate Limiting
       - key: RATE_LIMIT_WINDOW
         value: 15
       - key: RATE_LIMIT_MAX_REQUESTS
         value: 100
+      # File Upload Configuration
       - key: MAX_FILE_SIZE
-        value: 50mb
+        value: 500MB
+      - key: ALLOWED_FILE_TYPES
+        value: video/mp4,video/avi,video/mov,video/mkv,video/webm
+      # Application Configuration
       - key: TWO_FACTOR_SERVICE_NAME
         value: ViralCut Pro
+      - key: LOG_LEVEL
+        value: info
+      # Frontend URL
       - key: FRONTEND_URL
         value: https://viralcut-frontend.onrender.com
 
@@ -72,6 +92,9 @@ services:
       - path: /*
         name: X-XSS-Protection
         value: 1; mode=block
+      - path: /*
+        name: Strict-Transport-Security
+        value: max-age=31536000; includeSubDomains
     routes:
       - type: rewrite
         source: /api/*
@@ -82,6 +105,37 @@ services:
     envVars:
       - key: VITE_API_URL
         value: https://viralcut-api.onrender.com/api
+      - key: VITE_APP_NAME
+        value: ViralCut Pro
+      - key: VITE_APP_VERSION
+        value: 1.0.0
+      - key: VITE_DEVELOPER_NAME
+        value: Matheus Bassini
+      - key: VITE_DEVELOPER_EMAIL
+        value: suporte@matheusbassini.com.br
 
-# Database (usando o MySQL da Hostinger)
-# Não precisa criar database service pois já temos o MySQL configurado
+# Configuração MySQL Hostinger
+# IPs Outbound do Render que devem ser adicionados na Hostinger:
+# - 44.229.227.142
+# - 54.188.71.94  
+# - 52.13.128.108
+#
+# Para adicionar os IPs:
+# 1. Painel Hostinger → Databases → MySQL Databases
+# 2. Encontrar: u206326127_viralcut → Manage
+# 3. Remote MySQL → Add Host
+# 4. Adicionar cada IP individualmente
+#
+# Credenciais MySQL:
+# - Host: srv1883.hstgr.io
+# - Port: 3306
+# - Database: u206326127_viralcut
+# - User: u206326127_host
+# - Password: @Host1603
+#
+# Email SMTP Hostinger:
+# - Host: smtp.hostinger.com
+# - Port: 587
+# - User: suporte@matheusbassini.com.br
+# - Password: @Suporte1603
+# - Webmail: https://mail.hostinger.com/
