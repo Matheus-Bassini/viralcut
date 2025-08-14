@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Simples - matheusbassini.com.br</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .success {
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .info {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .contact {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 ViralCut Pro</h1>
+        <div class="success">✅ SITE FUNCIONANDO!</div>
+        
+        <div class="info">
+            <p><strong>Domínio:</strong> matheusbassini.com.br</p>
+            <p><strong>Status:</strong> Online e Operacional</p>
+            <p><strong>Desenvolvedor:</strong> Matheus Bassini</p>
+            <p><strong>Data/Hora:</strong> <span id="datetime"></span></p>
+        </div>
+
+        <div class="contact">
+            <h3>📞 Contato</h3>
+            <p><strong>Email:</strong> suporte@matheusbassini.com.br</p>
+            <p><strong>WhatsApp:</strong> +55 12 99225-7085</p>
+            <p><strong>Discord:</strong> matheusbassini</p>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <p>Se você está vendo esta página, o servidor está funcionando corretamente!</p>
+            <p>O ViralCut Pro será carregado em breve...</p>
+        </div>
+    </div>
+
+    <script>
+        // Mostrar data/hora atual
+        document.getElementById('datetime').textContent = new Date().toLocaleString('pt-BR');
+        
+        // Teste de JavaScript
+        console.log('✅ JavaScript funcionando!');
+        console.log('🌐 Domínio: matheusbassini.com.br');
+        console.log('👨‍💻 Desenvolvedor: Matheus Bassini');
+    </script>
+</body>
+</html>
