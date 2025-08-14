@@ -60,12 +60,10 @@ services:
           property: host
 
   # Frontend Static Site
-  - type: web
+  - type: static
     name: viralcut-frontend
-    runtime: static
-    env: static
     buildCommand: cd frontend && npm ci && npm run build
-    staticPublishPath: frontend/dist
+    publishPath: frontend/dist
     pullRequestPreviewsEnabled: true
     headers:
       - path: /*
