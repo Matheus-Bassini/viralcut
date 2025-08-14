@@ -54,10 +54,7 @@ services:
       - key: TWO_FACTOR_SERVICE_NAME
         value: ViralCut Pro
       - key: FRONTEND_URL
-        fromService:
-          type: web
-          name: viralcut-frontend
-          property: host
+        value: https://viralcut-frontend.onrender.com
 
   # Frontend Static Site
   - type: static
@@ -84,10 +81,7 @@ services:
         destination: /index.html
     envVars:
       - key: VITE_API_URL
-        fromService:
-          type: web
-          name: viralcut-api
-          property: host
+        value: https://viralcut-api.onrender.com/api
 
 # Database (usando o MySQL da Hostinger)
 # Não precisa criar database service pois já temos o MySQL configurado
